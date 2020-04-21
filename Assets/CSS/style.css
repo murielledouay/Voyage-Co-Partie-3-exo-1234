@@ -1,0 +1,76 @@
+/*..................... Header ....................*/
+header{
+  /* Ajout d'une image de fond */
+  background-image: url('../image/desert_egyptien.jpg');
+  /* Définition de la taille de l'image pour qu'elle soit aussi grande que possible tout en conservant ses proportions */
+  background-size: cover;
+  /* Définition de la hauteur du header */
+  height: 370px;
+  /* Définit l'élément parent (header) comme un container flexible et permettant de gérer la position de ses enfants (ici h1) */
+  display: flex;
+  /* Définit l'alignement horizontal des enfants du container (header) */
+  justify-content: center;
+  /* Définit l'alignement vertical des enfants du container (header) */
+  align-items: center;
+}
+/* Définition de la police du texte du h1 et de sa taille */
+h1{
+  font-family: 'Girassol', cursive;
+  font-size: 4.5em;
+}
+/*..................... Navbar ....................*/
+nav{
+  /* Définit l'élément parent (ul) comme un container flexible et permettant de gérer la position de ses enfants (ici li) */
+    background-color: #84B9D8;
+    height: 50px;
+    margin-top: : -20px;
+  }
+  #iconBurger{
+    display: none;
+  }
+  #presentation{
+    background-color: #CDB889;
+    margin: 3.6em 6.5em;
+    padding: 1em 3em;
+    text-align: center;
+    font-size: 1.1em;
+    }
+#blockLine{
+display: flex;
+flex-direction: row;
+margin: 3.6em;
+padding: 1em 3.8em;
+}
+img{
+width: 100%;
+}
+.block{
+text-align: center;
+background-color: #CDB889;
+}
+.block p{
+text-align: justify;
+padding: 1.2em 2.2em;
+}
+#block2{
+  margin: 0em 1.2em;
+  }
+  @media screen and (max-width : 992px){
+    #blockLine{
+    flex-direction: column;
+    }
+    #block2{
+      margin: 1.2em 0em;
+    }
+  }
+  @media screen and (max-width : 680px){
+    li a, li form{
+      display: none;
+    }
+    #iconBurger{
+      display: block;
+    }
+}
+body{
+  background-color: #F0EDD9;
+}
